@@ -6,9 +6,13 @@
   padding: 0;
   margin: 0;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
 #root {
   height: 100vh;
-  background-color: #535bf2;
+  background-color: #000000;
 }
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -25,28 +29,13 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
-a {
-  color: #eeeeee;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-  transition: color 0.5s;
-}
-body {
-  padding: 0;
-  margin: 0;
-}
 
 /* BUTTON STYLES */
 button {
-  border: 1px solid transparent;
   cursor: pointer;
-  /* transition: border-color 0.25s; */
 }
-/* button:hover {
-  border-color: #646cff;
-} */
+/* END OF BUTTON STYLES */
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #46f1da;
@@ -59,4 +48,3 @@ button {
     background-color: #f9f9f9;
   }
 }
-/* END OF BUTTON STYLES */

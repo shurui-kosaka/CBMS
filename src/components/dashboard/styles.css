@@ -1,0 +1,139 @@
+/*DROPDOWN MENU STYLES*/
+.dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: ease;
+    transition-duration: 300ms;
+}
+.dropdown-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: ease;
+    transition-duration: 300ms;
+}
+/*END OF DROPDOWN MENU STYLES*/
+
+/* HOMEPAGE STYLES*/
+.homepage.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.homepage.inactive {
+    background-color: none;
+}
+.homepageButton.active {
+    margin-left: 1rem;
+    transition: all;
+    transition-duration: 300ms;
+}
+.homepageButton.inactive {
+    margin-left: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+/* END OF HOMEPAGE STYLES*/
+
+/* QCI STYLES*/
+.qciMenu {
+    height: 50px;
+}
+.qciMenu:hover {
+    background-color: white;
+}
+.qciMenu.active {
+    background-color: white;
+}
+.qciMenu.inactive {
+    background-color: none;
+}
+.qciButton.active{
+    color: black;
+    font-weight: bold;
+    margin-left: 1rem;
+    transition: all;
+    transition-duration: 300ms;
+}
+.qciButton.inactive{
+    margin-left: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+/* END OF QCI STYLES*/
+
+/* GEOMENU STYLES*/
+.geoMenu.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.geoMenu.inactive {
+    background-color: none;
+}
+.geoButton.active {
+    margin-left: 1rem;
+    transition: all;
+    transition-duration: 300ms;
+}
+.geoButton.inactive {
+    margin-left: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+/* END OF GEOMENU STYLES*/
+
+/* AREAMENU STYLES*/
+.areaMenu.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.areaMenu.inactive {
+    background-color: none;
+}
+.areaButton.active {
+    margin-left: 1rem;
+    transition: all;
+    transition-duration: 300ms;
+}
+.areaButton.inactive {
+    margin-left: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+/* END OF AREAMENU STYLES*/
+
+/* RAWMENU STYLES*/
+.rawMenu.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.rawMenu.inactive {
+    background-color: none;
+}
+.rawButton.active {
+    margin-left: 1rem;
+    transition: all;
+    transition-duration: 300ms;
+}
+.rawButton.inactive {
+    margin-left: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+/* END OF RAWMENU STYLES*/
+
+/*LOWER MENU STYLES */
+.submenu {
+    height: 30px;
+}
+.sidebarButton.active {
+    margin-left: 320px;
+}
+.sidebarButton.inactive {
+    margin-left: 0px;
+}
+/*END OF LOWER MENU STYLES */

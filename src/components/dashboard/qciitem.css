@@ -1,0 +1,95 @@
+/* HEALTH STYLES*/
+.health.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.health.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF HEALTH STYLES*/
+
+/* NUTRITION STYLES*/
+.nutrition.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.nutrition.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF NUTRITION STYLES*/
+
+/* housing STYLES*/
+.housing.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.housing.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF housing STYLES*/
+
+/* was STYLES*/
+.was.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.was.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF was STYLES*/
+
+/* beal STYLES*/
+.beal.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.beal.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF beal STYLES*/
+
+/* income STYLES*/
+.income.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.income.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF income STYLES*/
+
+/* employment STYLES*/
+.employment.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.employment.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF employment STYLES*/
+
+/* pao STYLES*/
+.pao.active {
+    background-color: #242424;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.pao.inactive {
+    color: black;
+    background-color: none;
+}
+/* END OF pao STYLES*/
