@@ -16,7 +16,7 @@ function IncomeGroup() {
                     <h1 className='text-[16px] font-bold text-white'>Income Group</h1>
                     <p className='italic text-[10px]'>Monthly Income</p>
                 </div>
-                <img src='./src/assets/svgs/moneytick.svg' />
+                <img src='assets/svgs/moneytick.svg' />
             </div>
             <div className='flex'>
                 <div className='flex-1'>

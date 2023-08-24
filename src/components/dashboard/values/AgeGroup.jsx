@@ -12,7 +12,7 @@ function AgeGroup() {
         <div className='m-3 rounded-[10px] h-[24rem] px-4 py-4 bg-gradient-to-r from-black from-30% via-[#195618] via-100%'>
             <div className='flex mb-[3rem]'>
                 <h1 className='mr-auto text-[16px] font-bold text-white'>Age Group</h1>
-                <img src='./src/assets/svgs/timer.svg' />
+                <img src='assets/svgs/timer.svg' />
             </div>
             <div className='flex'>
                 <div className='flex-1'>
