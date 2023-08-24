@@ -14,9 +14,12 @@ function Signup() {
 
     async function submit(e) {
         e.preventDefault()
-        axios.post('http://localhost:3001/signup', {name, email, password})
-        .then(result => console.log(result))
-        .catch(err => console.log(err))
+        axios.post('http://localhost:3001/signup', { name, email, password })
+            .then(result => {
+                console.log(result)
+                navigate('/dashboardlogin')
+            })
+            .catch(err => console.log(err))
     }
 
     return (
