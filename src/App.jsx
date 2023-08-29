@@ -10,6 +10,7 @@ import QCI from './components/dashboard/qci';
 import Geodemographics from './components/dashboard/Geodemographics'
 import AreaDemographics from './components/dashboard/AreaDemographics';
 import RawData from './components/dashboard/RawData';
+import NotFound from './components/NotFound';
 
 export default function App() {
 
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/cbmsdashboard/geodemographics" element={<Geodemographics />} />
           <Route path="/cbmsdashboard/areademographics" element={<AreaDemographics />} />
           <Route path="/cbmsdashboard/rawdata" element={<RawData />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </div>
