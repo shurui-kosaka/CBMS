@@ -40,7 +40,12 @@ function Geodemographics() {
               </div>
             </div>
           </nav>
-          <div className='border border-white'>hatdog</div>
+            <div className='h-screen w-full border-[1px] border-white'>
+              <div className='relative w-[40%] flex flex-col items-center min-w-[21rem] text-black z-10 mt-4'>
+                <SearchBar setResults={setResults} />
+                {results && results.length > 0 && <SearchResultsList results={results} />}
+              </div>
+            </div>
         </div>
       </div>
     </div>

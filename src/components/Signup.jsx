@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useNavigate, useRef, Link } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { Helmet } from "react-helmet"
 import axios from "axios"
 import Navbar from "./Navbar"

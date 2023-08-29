@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
 
 import "./SearchBar.css";
 
@@ -28,10 +27,10 @@ export const SearchBar = ({ setResults }) => {
   };
 
   return (
-    <div className="input-wrapper w-full">
-      <FaSearch id="search-icon" />
+    <div className="input-wrapper w-full border border-white rounded-[10px] text-white">
+      <img src="/assets/svgs/searchicon.svg" className="w-[1.5rem]"/>
       <input
-        placeholder="Type to search..."
+        placeholder="Search"
         value={input}
         onChange={(e) => handleChange(e.target.value)}
       />

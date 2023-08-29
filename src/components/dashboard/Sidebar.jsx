@@ -29,9 +29,9 @@ const Sidebar = ({ visible }) => {
       </div>
 
       <div className="p-4 w-full">
-        <div className={`${location.pathname === "/cbmsdashboard" ? 'active' : 'inactive'} homepage h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 hover:text-black hover:bg-white hover:font-bold transition-all ease-in-out duration-300`}>
+        <div className={`${location.pathname === "/cbmsdashboard" ? 'active' : 'inactive'} homepage h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 transition-all ease-in-out duration-300 hover:bg-white`}>
           <Link to="/cbmsdashboard">
-            <button className={`${location.pathname === "/cbmsdashboard" ? 'active' : 'inactive'} homepageButton w-full h-full items-center text-left hover:ml-4`}>
+            <button className={`${location.pathname === "/cbmsdashboard" ? 'active' : 'inactive'} homepageButton w-full h-full items-center text-left hover:text-black hover:font-bold hover:ml-4`}>
               HOMEPAGE
             </button>
           </Link>
@@ -55,9 +55,9 @@ const Sidebar = ({ visible }) => {
         </div>
 
         <div className="flex-col">
-          <div className={`${location.pathname === "/cbmsdashboard/geodemographics" ? 'active' : 'inactive'} geoMenu h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 hover:text-black hover:bg-white hover:font-bold transition-all ease-in-out duration-300`}>
+          <div className={`${location.pathname === "/cbmsdashboard/geodemographics" ? 'active' : 'inactive'} geoMenu h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 transition-all ease-in-out duration-300 hover:bg-white`}>
             <Link to="/cbmsdashboard/geodemographics">
-              <button className={`${location.pathname === "/cbmsdashboard/geodemographics" ? 'active' : 'inactive'} geoButton w-full h-full items-center text-left hover:ml-4`}>
+              <button className={`${location.pathname === "/cbmsdashboard/geodemographics" ? 'active' : 'inactive'} geoButton w-full h-full items-center text-left hover:text-black hover:font-bold hover:ml-4`}>
                 GEODEMOGRAPHICS
               </button>
             </Link>
@@ -65,9 +65,9 @@ const Sidebar = ({ visible }) => {
         </div>
 
         <div className="flex-col">
-          <div className={`${location.pathname === "/cbmsdashboard/areademographics" ? 'active' : 'inactive'} areaMenu h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 hover:text-black hover:bg-white hover:font-bold transition-all ease-in-out duration-300`}>
+          <div className={`${location.pathname === "/cbmsdashboard/areademographics" ? 'active' : 'inactive'} areaMenu h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 transition-all ease-in-out duration-300 hover:bg-white`}>
             <Link to="/cbmsdashboard/areademographics">
-              <button className={`${location.pathname === "/cbmsdashboard/areademographics" ? 'active' : 'inactive'} areaButton w-full h-full items-center text-left hover:ml-4`}>
+              <button className={`${location.pathname === "/cbmsdashboard/areademographics" ? 'active' : 'inactive'} areaButton w-full h-full items-center text-left hover:text-black hover:font-bold hover:ml-4`}>
                 AREA DEMOGRAPHICS
               </button>
             </Link>
@@ -75,9 +75,9 @@ const Sidebar = ({ visible }) => {
         </div>
 
         <div className="flex-col">
-          <div className={`${location.pathname === "/cbmsdashboard/rawdata" ? 'active' : 'inactive'} rawMenu h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 hover:text-black hover:bg-white hover:font-bold transition-all ease-in-out duration-300`}>
+          <div className={`${location.pathname === "/cbmsdashboard/rawdata" ? 'active' : 'inactive'} rawMenu h-[50px] my-5 w-full cursor-pointer rounded-lg p-1 transition-all ease-in-out duration-300 hover:bg-white`}>
             <Link to="/cbmsdashboard/rawdata">
-              <button className={`${location.pathname === "/cbmsdashboard/rawdata" ? 'active' : 'inactive'} rawButton w-full h-full items-center text-left hover:ml-4`}>
+              <button className={`${location.pathname === "/cbmsdashboard/rawdata" ? 'active' : 'inactive'} rawButton w-full h-full items-center text-left hover:text-black hover:font-bold hover:ml-4`}>
                 RAW DATA
               </button>
             </Link>
