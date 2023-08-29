@@ -1,16 +1,22 @@
 import React, { useState } from "react"
-import { useNavigate, Link } from "react-router-dom"
+import { useNavigate, useRef, Link } from "react-router-dom"
 import { Helmet } from "react-helmet"
 import axios from "axios"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Sidepic from "./portal/Sidepic"
 
+// const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
+// const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+// const REGISTER_URL = '/signup';
+
 function Signup() {
     const navigate = useNavigate()
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    // const userRef = useRef();
+    // const errRef = useRef();
 
     async function submit(e) {
         e.preventDefault()

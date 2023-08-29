@@ -14,7 +14,7 @@ const Sidebar = ({ visible }) => {
     >
       <div className="p-4 mt-[1em]">
         <div className="text-2xl font-bold mb-2">
-          <img src='/assets/svgs/dashboardlogo.svg' />
+          <img src='assets/svgs/dashboardlogo.svg' />
         </div>
       </div>
 
