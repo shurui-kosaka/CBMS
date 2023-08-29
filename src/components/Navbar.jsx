@@ -31,7 +31,7 @@ function Navbar() {
                     <ul className='flex md:space-x-32 md:text-lg'>
                         <a href="https://psa.gov.ph/" target="_blank">
                             <li className="hover:text-white transition-all ease-in-out duration-500">
-                            {isSmallScreen ? <img src="/assets/svgs/psalogo.svg" alt="PSA"
+                            {isSmallScreen ? <img src="/assets/svgs/contact.svg" alt="PSA"
                                 className="w-10 mx-[7em] hover:shadow-xl transition-all ease-in-out duration-300"/> : "PSA"}
                             </li>
                         </a>
