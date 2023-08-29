@@ -3,15 +3,11 @@
     padding: 0 15px;
     background-color: #242424;
     display: flex;
-    position: absolute;
     align-items: center;
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
   }
 
   input {
     background-color: transparent;
-    border: none;
     height: 100%;
     font-size: 1.25rem;
     width: 100%;

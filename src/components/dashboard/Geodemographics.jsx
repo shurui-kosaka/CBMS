@@ -8,6 +8,46 @@ import '../dashboard/styles.css';
 function Geodemographics() {
   const [sidebarVisible, setSidebarVisible] = useState(true);
   const [results, setResults] = useState([]);
+  const [selectedRegion, setSelectedRegion] = useState('');
+  const [selectedProvince, setSelectedProvince] = useState('');
+  const [selectedCity, setSelectedCity] = useState('');
+
+  const regions = [
+    'National Capital Region',
+    'Central Luzon',
+    'Calabarzon',
+    // ... more regions
+  ];
+
+  const provinces = {
+    'National Capital Region': ['Metro Manila'],
+    'Central Luzon': ['Bulacan', 'Pampanga', 'Tarlac'],
+    'Calabarzon': ['Cavite', 'Laguna', 'Batangas', 'Rizal', 'Quezon'],
+    // ... more provinces
+  };
+
+  const cities = {
+    'Metro Manila': ['Manila', 'Quezon City', 'Makati', 'Pasay', 'Pasig'],
+    'Bulacan': ['Malolos', 'Meycauayan', 'San Jose del Monte'],
+    'Pampanga': ['Angeles', 'San Fernando'],
+    // ... more cities
+  };
+
+  const handleRegionChange = (event) => {
+    const selectedRegion = event.target.value;
+    setSelectedRegion(selectedRegion);
+    setSelectedProvince('');
+  };
+
+  const handleProvinceChange = (event) => {
+    const selectedProvince = event.target.value;
+    setSelectedProvince(selectedProvince);
+  };
+
+  const handleCityChange = (event) => {
+    const selectedCity = event.target.value;
+    setSelectedCity(selectedCity);
+  };
 
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
@@ -40,12 +80,66 @@ function Geodemographics() {
               </div>
             </div>
           </nav>
-            <div className='h-screen w-full border-[1px] border-white'>
-              <div className='relative w-[40%] flex flex-col items-center min-w-[21rem] text-black z-10 mt-4'>
-                <SearchBar setResults={setResults} />
-                {results && results.length > 0 && <SearchResultsList results={results} />}
+          <div className='h-screen w-full border-t-[1px] border-white flex-col'>
+            <div className='relative w-[40%] min-w-[21rem] flex flex-col items-center text-black z-10 mt-4'>
+              <SearchBar setResults={setResults} />
+              {results && results.length > 0 && <SearchResultsList results={results} />}
+            </div>
+
+            <div className='mt-4 w-[40%] min-w-[21rem]'>
+              <div className='relative'>
+                <select
+                  className='w-full p-2 border rounded shadow-sm'
+                  value={selectedRegion}
+                  onChange={handleRegionChange}
+                  aria-label='Select Region'
+                >
+                  <option value=''>
+                    Select Region
+                  </option>
+                  {regions.map(region => (
+                    <option key={region} value={region}>{region}</option>
+                  ))}
+                </select>
+                <img src='' alt='' className='absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none' />
+              </div>
+
+              <div className='relative mt-2'>
+                <select
+                  className='w-full p-2 border rounded shadow-sm'
+                  value={selectedProvince}
+                  onChange={handleProvinceChange}
+                  aria-label='Select Province'
+                >
+                  <option value=''>
+                    Select Province
+                  </option>
+                  {selectedRegion && provinces[selectedRegion].map(province => (
+                    <option key={province} value={province}>{province}</option>
+                  ))}
+                </select>
+                <img src='' alt='' className='absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none' />
+              </div>
+
+              <div className='relative mt-2'>
+                <select
+                  className='w-full p-2 border rounded shadow-sm'
+                  value={selectedCity}
+                  onChange={handleCityChange}
+                  aria-label="Select City"
+                >
+                  <option value=''>
+                    Select City
+                  </option>
+                  {selectedProvince && cities[selectedProvince].map(city => (
+                    <option key={city} value={city}>{city}</option>
+                  ))}
+                </select>
+                <img src='' alt='' className='absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none' />
               </div>
             </div>
+
+          </div>
         </div>
       </div>
     </div>
