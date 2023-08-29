@@ -22,7 +22,7 @@ function Geodemographics() {
         className={`${sidebarVisible ? 'active' : 'inactive'} sidebarButton absolute top-11 px-1 py-1 rounded-tr-md rounded-br-md bg-white z-50 transition-all ease-in-out duration-500`}
         onClick={() => { toggleSidebar() }}
       >
-        <img src='../src/assets/svgs/navbar.svg' className='w-6 h-6' />
+        <img src='/assets/svgs/navbar.svg' className='w-6 h-6' />
       </button>
       <Sidebar visible={sidebarVisible} />
       <div className="relative flex w-full h-full">
