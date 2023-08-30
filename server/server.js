@@ -44,6 +44,18 @@ app.post('/signup', (req, res) => {
     .catch(err => res.json(err));
 });
 
+app.post('/upload', (req, res) => {
+  setTimeout(() => {
+    console.log('File uploaded')
+    return res.status(200).json({ result: true, msg:'File Uploaded'})
+  }, 3000);
+})
+
+app.delete('/upload', (req, res) => {
+    console.log('File deleted')
+    return res.status(200).json({ result: true, msg:'File Uploaded'})
+})
+
 // Start the server
 const PORT = 3001;
 app.listen(PORT, () => {
