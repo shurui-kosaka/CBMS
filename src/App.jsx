@@ -7,7 +7,7 @@ import CBMSDashboard from './components/dashboard/CBMSDashboard';
 import Portal from './components/portal/Portal';
 import Signup from './components/Signup';
 import QCI from './components/dashboard/qci';
-import Geodemographics from './components/dashboard/Geodemographics'
+import Geodemographics from './components/dashboard/geodemographics/Geodemographics';
 import AreaDemographics from './components/dashboard/AreaDemographics';
 import RawData from './components/dashboard/RawData';
 import NotFound from './components/NotFound';
