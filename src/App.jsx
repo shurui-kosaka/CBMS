@@ -9,7 +9,7 @@ import Signup from './components/Signup';
 import QCI from './components/dashboard/qci';
 import Geodemographics from './components/dashboard/geodemographics/Geodemographics';
 import AreaDemographics from './components/dashboard/AreaDemographics';
-import RawData from './components/dashboard/RawData';
+import RawData from './components/dashboard/rawdata/RawData';
 import NotFound from './components/NotFound';
 
 export default function App() {
