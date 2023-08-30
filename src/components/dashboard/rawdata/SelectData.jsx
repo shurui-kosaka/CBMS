@@ -2,8 +2,8 @@ import React from 'react';
 
 function SelectData() {
     return (
-        <div className='mt-4 w-full min-w-[21rem]'>
-            <div className='relative w-[50%]'>
+        <div className='mt-4 min-w-[360px] max-w-[475px] md:w-[50%]'>
+            <div className='relative'>
                 <select
                     className='w-full p-2 border rounded-[10px] bg-white text-black shadow-sm'
                     defaultValue='' // Use defaultValue instead of value
@@ -14,7 +14,7 @@ function SelectData() {
                 </select>
             </div>
 
-            <div className='relative mt-2 w-[50%]'>
+            <div className='relative mt-2'>
                 <select
                     className='w-full p-2 border rounded-[10px] bg-white text-black shadow-sm'
                     defaultValue=''
@@ -25,7 +25,7 @@ function SelectData() {
                 </select>
             </div>
 
-            <div className='relative mt-2 w-[50%]'>
+            <div className='relative mt-2'>
                 <select
                     className='w-full p-2 border rounded-[10px] bg-white text-black shadow-sm'
                     defaultValue=''
@@ -37,7 +37,7 @@ function SelectData() {
                 </select>
             </div>
 
-            <div className='relative mt-2 w-[50%]'>
+            <div className='relative mt-2'>
                 <select
                     className='w-full p-2 border rounded-[10px] bg-white text-black shadow-sm'
                     defaultValue=''

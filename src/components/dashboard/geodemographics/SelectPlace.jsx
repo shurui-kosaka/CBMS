@@ -66,9 +66,9 @@ function SelectPlace() {
   };
 
   return (
-    <div className='mt-4 w-full min-w-[21rem]'>
+    <div className='mt-4 min-w-[360px] max-w-[475px] md:w-[50%]'>
 
-      <div className='relative w-[50%]'>
+      <div className='relative'>
         <select
           className='w-full p-2 border rounded-[10px] bg-white text-black shadow-sm'
           value={selectedRegion}
@@ -85,7 +85,7 @@ function SelectPlace() {
         <img src='' alt='' className='absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none' />
       </div>
 
-      <div className='relative mt-2 w-[50%]'>
+      <div className='relative mt-2'>
         <select
           className='w-full p-2 border rounded-[10px] bg-white text-black shadow-sm'
           value={selectedProvince}
@@ -102,7 +102,7 @@ function SelectPlace() {
         <img src='' alt='' className='absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none' />
       </div>
 
-      <div className='relative mt-2 w-[50%]'>
+      <div className='relative mt-2'>
         <select
           className='w-full p-2 border rounded-[10px] bg-white text-black shadow-sm'
           value={selectedCity}
@@ -119,7 +119,7 @@ function SelectPlace() {
         <img src='' alt='' className='absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none' />
       </div>
 
-      <div className='flex w-[50%]'>
+      <div className='flex'>
         <button className='mr-auto h-[36px] w-[168px] my-3 rounded-[48px] bg-[#15B725] font-bold text-black hover:bg-black hover:text-[#15B725] ease-in-out duration-200'>
           Find
         </button>
