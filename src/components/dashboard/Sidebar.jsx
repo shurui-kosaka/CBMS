@@ -86,8 +86,16 @@ const Sidebar = ({ visible }) => {
       </div>
 
       <div className="flex-col px-4 h-full">
-        <div className="submenu cursor-pointer hover:bg-white hover:text-black hover:font-bold mt-[2rem] mb-[1rem] pt-2 border-t-2 border-white transition-all ease-in-out duration-300">ACCOUNT SETTINGS</div>
-        <div className="submenu cursor-pointer hover:bg-white hover:text-black hover:font-bold transition-all ease-in-out duration-300">SIGN OUT</div>
+        <Link to={'/cbmsdashboard/accountsettings'}>
+          <div className="submenu cursor-pointer hover:bg-white hover:text-black hover:font-bold mt-[2rem] mb-[1rem] pt-2 border-t-2 border-white transition-all ease-in-out duration-300">
+            ACCOUNT SETTINGS
+          </div>
+        </Link>
+        <Link to={'/'}>
+          <div className="submenu cursor-pointer hover:bg-white hover:text-black hover:font-bold transition-all ease-in-out duration-300">
+            SIGN OUT
+          </div>
+        </Link>
       </div>
 
     </div>

@@ -75,7 +75,7 @@ const DashboardLogin = () => {
                 </div>
               </form>
 
-              <Link to="/signup">Don't have an account? Click here to sign-up!</Link>
+              {/* <Link to="/signup">Don't have an account? Click here to sign-up!</Link> */}
             </div>
           </div>
         </div>

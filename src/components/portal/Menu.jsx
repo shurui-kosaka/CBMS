@@ -14,7 +14,7 @@ export default function Menu(props) {
                     </div>
                     <div>
                         <img
-                            src="assets/svgs/arrowright.svg"
+                            src="/assets/svgs/arrowright.svg"
                             alt="Icon"
                             className="w-6 h-6"
                         />

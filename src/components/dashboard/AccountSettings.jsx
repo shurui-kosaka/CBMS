@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import Content from './Content';
 import './styles.css';
 
-const CBMSDashboard = () => {
+const AccountSettings = () => {
   const [sidebarVisible, setSidebarVisible] = useState(true);
 
   const toggleSidebar = () => {
@@ -30,4 +30,4 @@ const CBMSDashboard = () => {
   );
 };
 
-export default CBMSDashboard;
+export default AccountSettings;

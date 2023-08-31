@@ -38,11 +38,11 @@ app.post('/login', (req, res) => {
     })
 });
 
-app.post('/signup', (req, res) => {
-  EmployeeModel.create(req.body)
-    .then(employee => res.json(employee))
-    .catch(err => res.json(err));
-});
+// app.post('/signup', (req, res) => {
+//   EmployeeModel.create(req.body)
+//     .then(employee => res.json(employee))
+//     .catch(err => res.json(err));
+// });
 
 app.post('/upload', (req, res) => {
   setTimeout(() => {
