@@ -2,7 +2,7 @@ import React from 'react'
 
 function GenAccSet() {
   return (
-    <div className='flex flex-col pl-8 pt-4'>
+    <div className='flex flex-col pl-8 pt-4 text-white'>
       <h1 className='font-bold text-xl'>Account</h1>
     </div>
   )
