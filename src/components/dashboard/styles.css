@@ -126,14 +126,30 @@
 }
 /* END OF RAWMENU STYLES*/
 
-/*LOWER MENU STYLES */
-.submenu {
-    height: 30px;
+/* ACCSET STYLES*/
+.accSet.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
+.accSet.inactive {
+    background-color: none;
+}
+.accSet.active {
+    padding-left: 1.2rem;
+    transition: all;
+    transition-duration: 300ms;
+}
+.accSet.inactive {
+    padding-left: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+/* END OF ACCSET STYLES*/
+
 .sidebarButton.active {
     margin-left: 320px;
 }
 .sidebarButton.inactive {
     margin-left: 0px;
 }
-/*END OF LOWER MENU STYLES */

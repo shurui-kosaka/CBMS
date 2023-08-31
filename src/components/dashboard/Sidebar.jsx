@@ -87,12 +87,12 @@ const Sidebar = ({ visible }) => {
 
       <div className="flex-col px-4 h-full">
         <Link to={'/cbmsdashboard/accountsettings'}>
-          <div className="submenu cursor-pointer hover:bg-white hover:text-black hover:font-bold mt-[2rem] mb-[1rem] pt-2 border-t-2 border-white transition-all ease-in-out duration-300">
+          <div className={`${location.pathname === "/cbmsdashboard/accountsettings" ? 'active' : 'inactive'} accSet rounded-b-lg pl-1 h-[40px] cursor-pointer items-center justify-start flex py-2 border-t-2 border-white hover:bg-white hover:text-black hover:font-bold hover:pl-[1.2rem] transition-all ease-in-out duration-300`}>
             ACCOUNT SETTINGS
           </div>
         </Link>
         <Link to={'/'}>
-          <div className="submenu cursor-pointer hover:bg-white hover:text-black hover:font-bold transition-all ease-in-out duration-300">
+          <div className="rounded-b-lg pl-1 h-[40px] cursor-pointer items-center justify-start flex py-2 hover:bg-white hover:text-black hover:font-bold hover:p-[1.2rem] transition-all ease-in-out duration-300">
             SIGN OUT
           </div>
         </Link>
