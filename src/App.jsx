@@ -11,7 +11,7 @@ import Geodemographics from './components/dashboard/geodemographics/Geodemograph
 import AreaDemographics from './components/dashboard/AreaDemographics';
 import RawData from './components/dashboard/rawdata/RawData';
 import NotFound from './components/NotFound';
-import AccountSettings from './components/dashboard/AccountSettings';
+import AccountSettings from './components/dashboard/accountsettings/AccountSettings';
 
 export default function App() {
 
