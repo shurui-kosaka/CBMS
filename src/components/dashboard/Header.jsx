@@ -7,9 +7,9 @@ function Header({ visible }) {
     const [results, setResults] = useState([]);
 
     return (
-        <nav className='relative flex mt-[3rem] mb-[3rem] md:mb-[10px] pl-4 md:px-0 items-center w-full h-[10%]'>
+        <nav className='relative flex mt-[3.5rem] mb-[1rem] md:mb-[10px] pl-4 md:px-0 items-center w-full h-[10%]'>
             <div className='relative flex-wrap md:flex w-full'>
-                <div className='relative flex-1 mb-2'>
+                <div className='relative flex-1'>
                     <h1 className='text-white text-4xl'>Good Evening, {user}!</h1>
                 </div>
                 <div className='relative w-[40%] flex flex-col items-center min-w-[21rem] text-black z-10'>

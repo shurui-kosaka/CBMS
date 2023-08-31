@@ -31,9 +31,9 @@ function Geodemographics() {
           className={`${sidebarVisible ? ' ml-0 md:ml-[320px]' : 'md:ml-0'
             } relative flex flex-col w-full max-h-[100vh] bg-[#242424] duration-500 ease-in-out px-[2rem] md:px-[7rem] pb-6 overflow-y-auto`}
         >
-          <nav className='relative flex mt-[3rem] mb-[3rem] md:mb-[10px] ml-7 md:ml-0 items-center w-full h-[10%]'>
+          <nav className='relative flex mt-[3rem] md:mb-[10px] pl-4 md:px-0 items-center w-full h-[10%]'>
             <div className='relative flex-wrap md:flex w-full'>
-              <div className='relative flex-1 mb-2'>
+              <div className='relative flex-1'>
                 <h1 className='text-white text-4xl'>Geodemographics</h1>
               </div>
               <div className='relative w-[40%] flex flex-col items-center min-w-[21rem] text-black z-10'>
