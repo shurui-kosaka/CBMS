@@ -37,12 +37,12 @@ function Portal() {
       <Navbar />
       <div className='flex-1 relative overflow-y-auto w-full'>
         <div className='flex flex-col md:flex-row h-full'>
-          <div className='flex-1 absolute md:relative h-full'>
+          <div className='flex-1 absolute md:relative h-full z-20'>
             <div className='flex-1 h-full'>
               <Sidepic />
             </div>
           </div>
-          <div className='flex flex-1 flex-col relative h-full w-full justify-center' style={{ flex: '32%' }}>
+          <div className='flex flex-1 flex-col relative h-full w-full justify-center z-20' style={{ flex: '20%' }}>
             <Routes>
               <Route path="/"
                 element={
@@ -53,6 +53,9 @@ function Portal() {
                   </>
                 } />
             </Routes>
+          </div>
+          <div className='absolute flex justify-end w-0 h-0 md:w-full md:h-full pr-60 z-10 animate__animated animate__fadeIn'>
+            <img src='/assets/images/philmap.png' className='relative' />
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ import AreaDemographics from './components/dashboard/AreaDemographics';
 import RawData from './components/dashboard/rawdata/RawData';
 import NotFound from './components/NotFound';
 import AccountSettings from './components/dashboard/accountsettings/AccountSettings';
+import 'animate.css'
 
 export default function App() {
 

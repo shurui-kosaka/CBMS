@@ -4,7 +4,7 @@ function Sidepic() {
   const location = useLocation();
 
   return (
-    <div className='flex h-full w-full'>
+    <div className='flex h-full w-full animate__animated animate__slideInLeft'>
       <div className='relative h-full w-full overflow-hidden'>
         <img src={`./assets/images${location.pathname=== "/"? "/menu" : location.pathname}bg.png`} className='h-full w-full object-cover bg-no-repeat bg-fixed md:rounded-tr-[40px] md:rounded-br-[40px]' />
         <img src={`./assets/images${location.pathname=== "/"? "/logowithtext" : location.pathname}lt.png`} className='logo absolute bottom-9 left-12 w-[80%]' />

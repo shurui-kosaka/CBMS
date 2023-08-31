@@ -38,8 +38,8 @@ const DashboardLogin = () => {
             </div>
           </div>
           {/*LOGIN PAGE*/}
-          <div className='flex flex-1 flex-col relative h-full w-full justify-center' style={{ flex: '32%' }}>
-            <div className="flex flex-col w-[100%] h-[100%] items-center justify-center pb-[4rem] bg-[rgba(36,36,36,0.95)]">
+          <div className='flex flex-1 flex-col relative h-full w-full justify-center animate__animated animate__fadeIn' style={{ flex: '32%' }}>
+            <div className="flex flex-col w-[100%] h-[100%] items-center justify-center pb-[4rem] bg-[rgba(36,36,36,0.95)] md:bg-transparent">
               <form className="flex flex-col items-start w-[80%] md:w-[40%] h-[80%] justify-center" onSubmit={submit}>
                 <h1 className="text-white font-bold text-3xl md:text-4xl mb-[2rem]">Login to CBMS<br />Dashboard.</h1>
                 <input
