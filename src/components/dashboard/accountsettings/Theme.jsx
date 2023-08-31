@@ -2,8 +2,8 @@ import React from 'react'
 
 function Theme() {
   return (
-    <div>
-      Theme
+    <div className='flex flex-col pl-8 pt-4'>
+      <h1 className='font-bold text-xl'>Theme</h1>
     </div>
   )
 }

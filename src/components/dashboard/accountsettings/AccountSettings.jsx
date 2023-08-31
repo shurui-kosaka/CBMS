@@ -15,7 +15,7 @@ import AdminSettings from './AdminSettings';
 
 function AccountSettings() {
     const [sidebarVisible, setSidebarVisible] = useState(true);
-    const [activeSection, setActiveSection] = useState(null);
+    const [activeSection, setActiveSection] = useState('account');
 
     const toggleSidebar = () => {
         setSidebarVisible(!sidebarVisible);
