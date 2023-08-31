@@ -34,7 +34,7 @@ function Income() {
           <nav className='relative flex mt-[3rem] mb-[3rem] md:mb-[10px] ml-7 md:ml-0 items-center w-full h-[10%]'>
             <div className='relative flex-wrap md:flex w-full'>
                 <div className='relative flex-1 mb-2'>
-                    <h1 className='text-white text-4xl'>HPQ and BPQ Indicators</h1>
+                    <h1 className='text-white text-4xl'>Income</h1>
                 </div>
                 <div className='relative w-[40%] flex flex-col items-center min-w-[21rem] text-black z-10'>
                     <SearchBar setResults={setResults} />
