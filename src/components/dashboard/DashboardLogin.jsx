@@ -28,7 +28,7 @@ const DashboardLogin = () => {
       <Navbar />
       <div className='flex-1 relative overflow-y-auto w-full'>
         <Helmet>
-          <title>CBMS-Dashboard Login</title>
+          <title>CBMS Dashboard Login</title>
         </Helmet>
         <div className='flex flex-col md:flex-row h-full'>
           {/*BACKGROUND PICTURE*/}
