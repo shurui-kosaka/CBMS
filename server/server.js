@@ -27,13 +27,13 @@ app.use(cors());
 // Call the connectToMongoDB function to establish the connection
 connectToMongoDB();
 
-// Define your routes that depend on the database connection here
+// Routes that depend on the database connection
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const db = client.db('Employee'); // Replace with your database name
-    const collection = db.collection('Login'); // Replace with your collection name
+    const db = client.db('Employee');
+    const collection = db.collection('Login');
 
     const user = await collection.findOne({ email: email });
 
@@ -51,8 +51,6 @@ app.post('/login', async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
-// Define other routes and route handlers here
 
 const PORT = 3001;
 app.listen(PORT, () => {
