@@ -1,5 +1,6 @@
 import { React } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
+import 'animate.css'
 import DashboardLogin from './components/dashboard/DashboardLogin';
 import FieldLogin from './components/field/FieldLogin';
 import HubLogin from './components/hub/HubLogin';
@@ -12,7 +13,7 @@ import AreaDemographics from './components/dashboard/AreaDemographics';
 import RawData from './components/dashboard/rawdata/RawData';
 import NotFound from './components/NotFound';
 import AccountSettings from './components/dashboard/accountsettings/AccountSettings';
-import 'animate.css'
+import CBMSHub from './components/hub/CBMSHub';
 
 export default function App() {
 
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/cbmsdashboard/areademographics" element={<AreaDemographics />} />
           <Route path="/cbmsdashboard/rawdata" element={<RawData />} />
           <Route path="/cbmsdashboard/accountsettings" element={<AccountSettings />} />
+          <Route path="/cbmshub" element={<CBMSHub />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -43,7 +43,7 @@ const HubLogin = () => {
                   className='rounded-[10px] bg-[rgba(255,255,255,0.37)] text-white p-4 mb-4 w-full h-10'
                 />
                 <div className="w-full flex justify-center my-5">
-                  <Link to="/EnumeratorHub">
+                  <Link to="/cbmshub">
                     <button
                       className='font-bold text-black bg-[#09E91F] rounded-[100px] px-4 py-2 hover:scale-110 transition ease-in-out delay-10 duration-100'
                     >

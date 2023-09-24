@@ -4,6 +4,8 @@ import { SearchBar } from '../SearchBar';
 import { SearchResultsList } from '../SearchResultsList';
 import Sidebar from '../Sidebar'
 import SelectPlace from './SelectPlace';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import Map, { Marker, NavigationControl } from "react-map-gl";
 import '../styles.css';
 
 function Geodemographics() {
@@ -51,7 +53,19 @@ function Geodemographics() {
             <SelectPlace />
             <div className='flex flex-col w-full items-center justify-center py-4 border-t border-white'>
               <div className='flex flex-col w-full items-center justify-center'>
-                <img src="/assets/svgs/map.svg" alt="" className='mt-[20px]' />
+                {/*<img src="/assets/svgs/map.svg" alt="" className='mt-[20px]' />*/}
+                <Map mapboxAccessToken="pk.eyJ1Ijoic2hpcm9uZWtpMjIiLCJhIjoiY2xteGVtaXBhMHJ2bDJ1bTJ6c201M3FoMiJ9.ZS1t6d2HvLvbbNGYIxNN2g" style = {{
+                  width: "1000px",
+                  height: "500px",
+                  border: "4px Solid rgb(13, 117, 130)",
+                }} initialViewState={{
+                  longitude:122.7412101,
+                  latitude:12.7503486,
+                  zoom:4.5
+                }}
+                mapStyle="mapbox://styles/mapbox/dark-v11">
+                  <NavigationControl></NavigationControl>
+                </Map>
                 <p className='text-[24px]'>Enter Location to View Details</p>
               </div>
             </div>
